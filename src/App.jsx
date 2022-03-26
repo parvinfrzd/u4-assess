@@ -37,7 +37,10 @@ class App extends Component {
         btn4Selected: false,
         crcl2Selected: false, 
         crcl3Selected: false, 
-        crcl4Selected: false
+        crcl4Selected: false, 
+        btn2text: 'SELECT CIRCLE 2', 
+        btn3text: 'SELECT CIRCLE 3', 
+        btn4text: 'SELECT CIRCLE 4',
       }
     });
   }
@@ -55,7 +58,10 @@ class App extends Component {
         btn4Selected: false,
         crcl1Selected: false, 
         crcl3Selected: false, 
-        crcl4Selected: false
+        crcl4Selected: false, 
+        btn1text: 'SELECT CIRCLE 1',  
+        btn3text: 'SELECT CIRCLE 3', 
+        btn4text: 'SELECT CIRCLE 4',
       }
     });
   }
@@ -72,7 +78,10 @@ class App extends Component {
         btn4Selected: false,
         crcl1Selected: false, 
         crcl2Selected: false, 
-        crcl4Selected: false
+        crcl4Selected: false, 
+        btn1text: 'SELECT CIRCLE 1', 
+        btn2text: 'SELECT CIRCLE 2', 
+        btn4text: 'SELECT CIRCLE 4',
       }
     });
   }
@@ -88,7 +97,10 @@ class App extends Component {
         btn1Selected: false,
         crcl2Selected: false, 
         crcl3Selected: false, 
-        crcl1Selected: false
+        crcl1Selected: false, 
+        btn1text: 'SELECT CIRCLE 1', 
+        btn2text: 'SELECT CIRCLE 2', 
+        btn3text: 'SELECT CIRCLE 3', 
       }
     });
   }
