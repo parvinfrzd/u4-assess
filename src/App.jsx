@@ -6,10 +6,6 @@ import Circles from './components/Circle/Circle';
 
 class App extends Component {
   state = {
-    btn1 : {text: 'SELECT CIRCLE 1', btnSelected : false},
-    btn2 : {text: 'SELECT CIRCLE 2', btnSelected : false},
-    btn3 : {text: 'SELECT CIRCLE 3', btnSelected : false},
-    btn4 : {text: 'SELECT CIRCLE 4', btnSelected : false},
     crcl1 : {text: '1', selected : false},
     crcl2 : {text: '2', selected : false},
     crcl3 : {text: '3', selected : false},
@@ -26,21 +22,23 @@ class App extends Component {
     btn2text: 'SELECT CIRCLE 2', 
     btn3text: 'SELECT CIRCLE 3', 
     btn4text: 'SELECT CIRCLE 4', 
-
   }
 
 
 
   updateBtn1 = () => {
     this.setState((state) => {
-      // Important: read `state` instead of `this.state` when updating.
       return {
         btn1Selected: !state.btn1Selected.value,
         crcl1Selected: !state.crcl1Selected.value, 
-        btn1text: 'CIRCLE 1 SELECTED'
+        btn1text: 'CIRCLE 1 SELECTED',
+        btn2Selected: false,
+        btn3Selected: false, 
+        btn4Selected: false,
       }
     });
   }
+
 
   updateBtn2 = () => {
     this.setState((state) => {
@@ -48,7 +46,10 @@ class App extends Component {
       return {
         btn2Selected: !state.btn2Selected.value,
         crcl2Selected: !state.crcl2Selected.value,
-        btn2text: 'CIRCLE 2 SELECTED'
+        btn2text: 'CIRCLE 2 SELECTED',
+        btn1Selected: false,
+        btn3Selected: false, 
+        btn4Selected: false,
       }
     });
   }
@@ -59,18 +60,23 @@ class App extends Component {
       return {
         btn3Selected: !state.btn3Selected.value,
         crcl3Selected: !state.crcl3Selected.value,
-        btn3text: 'CIRCLE 3 SELECTED'
+        btn3text: 'CIRCLE 3 SELECTED',
+        btn1Selected: false,
+        btn2Selected: false, 
+        btn4Selected: false,
       }
     });
   }
 
   updateBtn4 = () => {
     this.setState((state) => {
-      // Important: read `state` instead of `this.state` when updating.
       return {
         btn4Selected: !state.btn4Selected.value,
         crcl4Selected: !state.crcl4Selected.value,
-        btn4text: 'CIRCLE 4 SELECTED'
+        btn4text: 'CIRCLE 4 SELECTED',
+        btn2Selected: false,
+        btn3Selected: false, 
+        btn1Selected: false,
       }
     });
   }
