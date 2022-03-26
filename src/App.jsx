@@ -35,6 +35,9 @@ class App extends Component {
         btn2Selected: false,
         btn3Selected: false, 
         btn4Selected: false,
+        crcl2Selected: false, 
+        crcl3Selected: false, 
+        crcl4Selected: false
       }
     });
   }
@@ -50,6 +53,9 @@ class App extends Component {
         btn1Selected: false,
         btn3Selected: false, 
         btn4Selected: false,
+        crcl1Selected: false, 
+        crcl3Selected: false, 
+        crcl4Selected: false
       }
     });
   }
@@ -64,6 +70,9 @@ class App extends Component {
         btn1Selected: false,
         btn2Selected: false, 
         btn4Selected: false,
+        crcl1Selected: false, 
+        crcl2Selected: false, 
+        crcl4Selected: false
       }
     });
   }
@@ -77,6 +86,9 @@ class App extends Component {
         btn2Selected: false,
         btn3Selected: false, 
         btn1Selected: false,
+        crcl2Selected: false, 
+        crcl3Selected: false, 
+        crcl1Selected: false
       }
     });
   }
